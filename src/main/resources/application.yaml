@@ -1,0 +1,10 @@
+logging:
+  level:
+    root: INFO
+    io.oguz.fibonacci: DEBUG
+spring:
+  application:
+    name: fibonacci
+springdoc:
+  swagger-ui:
+    try-it-out-enabled: false

@@ -1,0 +1,681 @@
+{
+	"info": {
+		"_postman_id": "0b4a2bb9-500d-4f88-8d72-8c7109d4a281",
+		"name": "Fibonacci Sequence Service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1494044"
+	},
+	"item": [
+		{
+			"name": "fibonacci",
+			"item": [
+				{
+					"name": "get for n=999, pageSize=20, pageCount=1",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/fibonacci/999?pageCount=1&pageSize=20",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"fibonacci",
+								"999"
+							],
+							"query": [
+								{
+									"key": "pageCount",
+									"value": "1"
+								},
+								{
+									"key": "pageSize",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get for n=999, pageSize=20, pageCount=50",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/fibonacci/99?pageCount=50&pageSize=20",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"fibonacci",
+								"99"
+							],
+							"query": [
+								{
+									"key": "pageCount",
+									"value": "50"
+								},
+								{
+									"key": "pageSize",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get for n=99999, pageSize=20, pageCount=5000",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/fibonacci/99999?pageCount=5000&pageSize=20",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"fibonacci",
+								"99999"
+							],
+							"query": [
+								{
+									"key": "pageCount",
+									"value": "5000"
+								},
+								{
+									"key": "pageSize",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get for n=999999, pageSize=20, pageCount=5000",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/fibonacci/999999?pageCount=5000&pageSize=20",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"fibonacci",
+								"999999"
+							],
+							"query": [
+								{
+									"key": "pageCount",
+									"value": "5000"
+								},
+								{
+									"key": "pageSize",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get for n=999999, pageSize=5, pageCount=200000",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/fibonacci/999999?pageCount=200000&pageSize=5",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"fibonacci",
+								"999999"
+							],
+							"query": [
+								{
+									"key": "pageCount",
+									"value": "200000"
+								},
+								{
+									"key": "pageSize",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "fibonacci-poc",
+			"item": [
+				{
+					"name": "get with option RECURSIVE_BASIC_CACHE",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/fibonacci-poc/999?option=RECURSIVE_BASIC_CACHE",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"fibonacci-poc",
+								"999"
+							],
+							"query": [
+								{
+									"key": "option",
+									"value": "RECURSIVE_BASIC_CACHE"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get with option ITERATIVE_BASIC_CACHE",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/fibonacci-poc/9999?option=ITERATIVE_BASIC_CACHE",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"fibonacci-poc",
+								"9999"
+							],
+							"query": [
+								{
+									"key": "option",
+									"value": "ITERATIVE_BASIC_CACHE"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get with option ITERATIVE_UNLIMITED_SHARED_CACHE",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/fibonacci-poc/999?option=ITERATIVE_UNLIMITED_SHARED_CACHE",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"fibonacci-poc",
+								"999"
+							],
+							"query": [
+								{
+									"key": "option",
+									"value": "ITERATIVE_UNLIMITED_SHARED_CACHE"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get with option ITERATIVE_BOUNDED_CACHE",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/fibonacci-poc/999?option=ITERATIVE_BOUNDED_CACHE",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"fibonacci-poc",
+								"999"
+							],
+							"query": [
+								{
+									"key": "option",
+									"value": "ITERATIVE_BOUNDED_CACHE"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get with option RECURSIVE_BASIC_CACHE [unstable]",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/fibonacci-poc/99999?option=RECURSIVE_BASIC_CACHE&pageCount=5000",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"fibonacci-poc",
+								"99999"
+							],
+							"query": [
+								{
+									"key": "option",
+									"value": "RECURSIVE_BASIC_CACHE"
+								},
+								{
+									"key": "pageCount",
+									"value": "5000"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get with option ITERATIVE_BASIC_CACHE [unstable]",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/fibonacci-poc/999999?option=ITERATIVE_BASIC_CACHE&pageCount=50000",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"fibonacci-poc",
+								"999999"
+							],
+							"query": [
+								{
+									"key": "option",
+									"value": "ITERATIVE_BASIC_CACHE"
+								},
+								{
+									"key": "pageCount",
+									"value": "50000"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get with option ITERATIVE_UNLIMITED_SHARED_CACHE [unstable]",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/fibonacci-poc/999999?option=ITERATIVE_UNLIMITED_SHARED_CACHE&pageCount=50000",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"fibonacci-poc",
+								"999999"
+							],
+							"query": [
+								{
+									"key": "option",
+									"value": "ITERATIVE_UNLIMITED_SHARED_CACHE"
+								},
+								{
+									"key": "pageCount",
+									"value": "50000"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get with option ITERATIVE_BOUNDED_CACHE [slow]",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/fibonacci-poc/999999?option=ITERATIVE_BOUNDED_CACHE&pageCount=50000",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"fibonacci-poc",
+								"999999"
+							],
+							"query": [
+								{
+									"key": "option",
+									"value": "ITERATIVE_BOUNDED_CACHE"
+								},
+								{
+									"key": "pageCount",
+									"value": "50000"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:8080",
+			"type": "string"
+		}
+	]
+}
